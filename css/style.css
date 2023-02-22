@@ -24,6 +24,18 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    padding: 10px;
+}
 /*utility*/
 
 .btn {
@@ -31,14 +43,15 @@ body {
     display: inline-block;
     border-radius: 30px;
     border: 1px solid var(--white);
-    color: var(--white);
-    text-decoration: none;
 }
 
 .u-text {
     text-transform: uppercase;
 }
 
+.text-small{
+    font-size: small;
+}
 /*flex*/
 
 .d-flex {
@@ -49,9 +62,22 @@ body {
     justify-content: flex-end;
 }
 
+.justify-center{
+    justify-content: center;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
 .align-center{
     align-items: center;
     align-content: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
 }
 
 /*content*/
