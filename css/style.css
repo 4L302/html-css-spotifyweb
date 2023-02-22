@@ -24,18 +24,19 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-a{
+a {
     color: var(--white);
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-li{
+li {
     padding: 10px;
 }
+
 /*utility*/
 
 .btn {
@@ -49,33 +50,51 @@ li{
     text-transform: uppercase;
 }
 
-.text-small{
-    font-size: small;
+.text-small {
+    font-size: 0.7rem;
+    color: var(--grey);
 }
+
+.txt-center {
+    text-align: center;
+}
+
+.mb-10{
+    margin-bottom: 1vh;
+}
+
+.txt-bold {
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1vw;
+}
+
 /*flex*/
 
 .d-flex {
     display: flex;
 }
 
-.justify-end{
+.justify-end {
     justify-content: flex-end;
 }
 
-.justify-center{
+.justify-center {
     justify-content: center;
 }
 
-.space-between{
+.space-between {
     justify-content: space-between;
 }
 
-.align-center{
+.align-center {
     align-items: center;
     align-content: center;
 }
 
-.row{
+.flex-row {
     display: flex;
     flex-direction: row;
 }
@@ -127,4 +146,29 @@ main {
 
 .main-section {
     margin-top: 80px;
+}
+
+.container {
+
+    padding: 15px;
+}
+
+.rounded-img{
+    width: 100%;
+    border-radius: 50%;
+}
+.row {
+
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col {
+
+    padding: 15px;
+    width: calc(100% / 6);
+}
+
+.col img {
+    width: 100%;
 }
