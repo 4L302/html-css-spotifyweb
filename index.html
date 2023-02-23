@@ -30,22 +30,27 @@
                     <section class="aside-nav">
                         <ul>
                             <li>
-                                <a href="#" class="active">
+                                <a href="#" class="active d-flex align-center">
                                     <img src="./img/home.svg" alt="home">
                                     <span>Home</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" class="d-flex align-center">
+                                    <img src="./img/search.svg" alt="">
                                     <span>Cerca</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" class="d-flex align-center">
+                                    <img src="./img/libreria.svg" alt="">
                                     <span>La tua libreria</span>
                                 </a>
                             </li>
                         </ul>
+                    </section>
+                    <section class="playlist">
+                        
                     </section>
                 </div>
                 <div class="bottom-nav"></div>
@@ -58,7 +63,7 @@
                     <nav class="d-flex justify-center">
                         <ul class="flex-row flexwrap u-text text-small txt-bold">
                             <li>
-                                <a href="#" class=" active">In evidenza</a>
+                                <a href="#" class="active">In evidenza</a>
                             </li>
                             <li>
                                 <a href="#">Podcast</a>
@@ -81,57 +86,69 @@
                         <h2 class="mb-10">Recently played</h2>
                         <div class="row d-flex flexwrap">
                             <div class="col">
-                                <div class="cover-image">
-                                    <img src="./img/metal_lifting.jpg" alt="heavymetal">
-                                </div>
-                                <div class="cover-text">
-                                    <h3>Heavy Metal</h3>
-                                    <h5 class="text-small">Subtitle</h5>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="cover-image">
-                                    <img src="./img/stranger.jpeg" alt="heavymetal">
-                                </div>
-                                <div class="cover-text">
-                                    <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
-                                    <h5 class="text-small">Kyle Dixon & Michael Stein</h5>
+                                <div class="cover">
+                                    <div class="cover-image">
+                                        <img src="./img/metal_lifting.jpg" alt="heavymetal">
+                                    </div>
+                                    <div class="cover-text">
+                                        <h3>Heavy Metal</h3>
+                                        <h5 class="text-small">Subtitle</h5>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="cover-image">
-                                    <img src="./img/aquietplace.jpeg" alt="heavymetal">
-                                </div>
-                                <div class="cover-text">
-                                    <h3>A quiet place</h3>
-                                    <h5 class="text-small">Subtitle</h5>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="cover-image">
-                                    <img src="./img/split.jpeg" alt="heavymetal">
-                                </div>
-                                <div class="cover-text">
-                                    <h3>Split</h3>
-                                    <h5 class="text-small">Subtitles</h5>
+                                <div class="cover">
+                                    <div class="cover-image">
+                                        <img src="./img/stranger.jpeg" alt="heavymetal">
+                                    </div>
+                                    <div class="cover-text">
+                                        <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                                        <h5 class="text-small">Kyle Dixon & Michael Stein</h5>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="cover-image">
-                                    <img src="./img/cure.jpeg" alt="heavymetal">
-                                </div>
-                                <div class="cover-text">
-                                    <h3>A cure for wellness</h3>
-                                    <h5 class="text-small">Subtitles</h5>
+                                <div class="cover">
+                                    <div class="cover-image">
+                                        <img src="./img/aquietplace.jpeg" alt="heavymetal">
+                                    </div>
+                                    <div class="cover-text">
+                                        <h3>A quiet place</h3>
+                                        <h5 class="text-small">Subtitle</h5>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="cover-image">
-                                    <img src="./img/sinister.jpeg" alt="heavymetal">
+                                <div class="cover">
+                                    <div class="cover-image">
+                                        <img src="./img/split.jpeg" alt="heavymetal">
+                                    </div>
+                                    <div class="cover-text">
+                                        <h3>Split</h3>
+                                        <h5 class="text-small">Subtitles</h5>
+                                    </div>
                                 </div>
-                                <div class="cover-text">
-                                    <h3>Sinister</h3>
-                                    <h5 class="text-small">Subtitles</h5>
+                            </div>
+                            <div class="col">
+                                <div class="cover">
+                                    <div class="cover-image">
+                                        <img src="./img/cure.jpeg" alt="heavymetal">
+                                    </div>
+                                    <div class="cover-text">
+                                        <h3>A cure for wellness</h3>
+                                        <h5 class="text-small">Subtitles</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="cover">
+                                    <div class="cover-image">
+                                        <img src="./img/sinister.jpeg" alt="heavymetal">
+                                    </div>
+                                    <div class="cover-text">
+                                        <h3>Sinister</h3>
+                                        <h5 class="text-small">Subtitles</h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -141,19 +158,23 @@
                         <h5 class="text-small">Più ascolti, più accurati saranno i suggerimenti.</h5>
                         <div class="row d-flex">
                             <div class="col">
-                                <div class="cover-image">
-                                    <img src="./img/radar.jpeg" alt="heavymetal">
-                                </div>
-                                <div class="cover-text">
-                                    <h3>Release Radar</h3>   
+                                <div class="cover">
+                                    <div class="cover-image">
+                                        <img src="./img/radar.jpeg" alt="heavymetal">
+                                    </div>
+                                    <div class="cover-text">
+                                        <h3>Release Radar</h3>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="cover-image">
-                                    <img src="./img/mixdaily.jpeg" alt="heavymetal">
-                                </div>
-                                <div class="cover-text">
-                                    <h3>Dally Mix 1</h3>   
+                                <div class="cover">
+                                    <div class="cover-image">
+                                        <img src="./img/mixdaily.jpeg" alt="heavymetal">
+                                    </div>
+                                    <div class="cover-text">
+                                        <h3>Dally Mix 1</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -163,19 +184,23 @@
                         <h5 class="text-small">Più ascolti, più accurati saranno i suggerimenti.</h5>
                         <div class="row d-flex">
                             <div class="col">
-                                <div class="cover-image">
-                                    <img class="rounded-img" src="./img/youg.jpeg" alt="heavymetal">
-                                </div>
-                                <div class="cover-text">
-                                    <h3>Lana Del Rey</h3>   
+                                <div class="cover">
+                                    <div class="cover-image">
+                                        <img class="rounded-img" src="./img/youg.jpeg" alt="heavymetal">
+                                    </div>
+                                    <div class="cover-text">
+                                        <h3>Lana Del Rey</h3>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="cover-image">
-                                    <img class="rounded-img" src="./img/einaudi.jpeg" alt="heavymetal">
-                                </div>
-                                <div class="cover-text">
-                                    <h3>Ludovico Enaudi</h3>   
+                                <div class="cover">
+                                    <div class="cover-image">
+                                        <img class="rounded-img" src="./img/einaudi.jpeg" alt="heavymetal">
+                                    </div>
+                                    <div class="cover-text">
+                                        <h3>Ludovico Enaudi</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
