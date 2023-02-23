@@ -25,12 +25,21 @@ body {
 }
 
 a {
-    color: var(--white);
+    color: var(--grey);
     text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: var(--white);
 }
 
 ul {
     list-style: none;
+}
+
+img {
+    max-width: 100%;
 }
 
 li {
@@ -46,6 +55,15 @@ li {
     border: 1px solid var(--white);
 }
 
+.scale {
+    transform: scale(0.8);
+    transition: transform 0.5s;
+}
+
+.scale:hover {
+    transform: scale(1);
+}
+
 .u-text {
     text-transform: uppercase;
 }
@@ -59,7 +77,7 @@ li {
     text-align: center;
 }
 
-.mb-10{
+.mb-10 {
     margin-bottom: 1vh;
 }
 
@@ -79,6 +97,10 @@ h3 {
 
 .justify-end {
     justify-content: flex-end;
+}
+
+.flexwrap {
+    flex-wrap: wrap;
 }
 
 .justify-center {
@@ -122,11 +144,6 @@ main {
 
 }
 
-.main-nav {
-    width: 230px;
-    min-height: 480px;
-    background-color: var(--black);
-}
 
 .main-content {
     width: calc(100% - 230px);
@@ -153,10 +170,11 @@ main {
     padding: 15px;
 }
 
-.rounded-img{
+.rounded-img {
     width: 100%;
     border-radius: 50%;
 }
+
 .row {
 
     margin-left: -15px;
@@ -171,4 +189,84 @@ main {
 
 .col img {
     width: 100%;
+}
+
+.cover-text h3,
+.cover-text h5{
+    text-align: center;
+    padding-top: 10px;
+}
+/*nav laterale*/
+
+.main-nav {
+    width: 230px;
+    min-height: 480px;
+    background-color: var(--black);
+    overflow: hidden;
+}
+
+.main-section nav ul li a {
+    display: block;
+    padding: 5px 15px;
+}
+
+.main-section nav ul li:after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.main-section nav ul li:hover:after,
+.main-section nav ul li.active:after {
+    background-color: var(--highlight);
+}
+
+.bottom-nav {
+    width: 100%;
+    height: 80px;
+    border: 1px solid greenyellow;
+}
+
+.top-nav {
+    width: 100%;
+    height: calc(100% - 80px);
+}
+
+.logo {
+    padding: 15px;
+}
+
+.logo-small {
+    padding: 5px;
+    display: none;
+}
+
+.logo img,
+.logo-small img {
+    width: 70%;
+}
+
+.aside-nav img {
+    width: 30px;
+    opacity: 0.8;
+}
+
+.aside-nav li {
+    padding-bottom: 10px;
+}
+
+.aside-nav img:hover {
+    opacity: 1;
+}
+
+.aside-nav a {
+    border-left: 2px solid transparent;
+}
+
+.aside-nav a:hover,
+.aside-nav a.active {
+    border-left: 3px solid var(--highlight);
 }
