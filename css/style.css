@@ -276,7 +276,7 @@ main {
 
 .logo img,
 .logo-small img {
-    width: 70%;
+    width: 80%;
 }
 
 .aside-nav img {
@@ -339,11 +339,21 @@ main {
 
     .logo-small {
         display: block;
+        padding-left: 10px;
+        padding-top: 10px;
     }
 
-    @media screen and (max-width: 400px) {
-        .col {
-            width: 100%;
-        }
+    .aside-nav a {
+        padding-left: 0px;
+    }
+
+    .aside-nav a.active {
+        border: 2px solid transparent;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .col {
+        width: 100%;
     }
 }
