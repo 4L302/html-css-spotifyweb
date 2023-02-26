@@ -124,6 +124,9 @@ h3 {
     flex-wrap: wrap;
 }
 
+.flex-column{
+    flex-direction: column;
+}
 .justify-center {
     justify-content: center;
 }
@@ -370,7 +373,6 @@ p.list{
 .playbar-vol {
     width: 230px;
     height: 100%;
-    border: 1px solid red;
 }
 
 .playbar-album img {
@@ -393,14 +395,37 @@ p.list{
 
 .playbar-control {
     width: 40%;
-    border: 1px solid yellow;
     height: 100%;
 }
+
+.playbar-control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.playbar-control i{
+    padding: 5px;
+} 
+
+#musicbar{
+    width: 100%;
+}
+
+#musicbar span{
+    width: 10%;
+
+}
+
+#musicbar input{
+    width: 80%;
+}
+
 
 .icon-vol{
     padding: 5px;
     width: calc(100% / 3);
-    border: 1px solid green;
 }
 
 .playbar-vol input{
@@ -455,10 +480,40 @@ p.list{
     .aside-nav a.active {
         border: 2px solid transparent;
     }
+
+    .playbar-album img {
+        width: 100%;
+    }
+    #install a{
+        display: none;
+    }
+    #install i{
+        font-size: 30px;
+    }
+
+    #profile h3{
+        display: none;
+    }
+
+    #profile .profile-image{
+        width: 30px;
+        height: 30px;  
+    }
+
+    #profile .profile-image img{
+        width: 30px;
+    }
+ 
 }
 
 @media screen and (max-width: 400px) {
     .col {
         width: 100%;
     }
+}
+
+/*debug*/
+
+.debug{
+    border: 1px solid green;
 }

@@ -261,7 +261,6 @@
             </section>
         </main>
         <div id="playbar" class="d-flex align-center space-between">
-            <!--<i class="fa-sharp fa-regular fa-circle-play"></i>-->
             <div class="playbar-album">
                 <div class="d-flex align-center">
                     <div class="ptop-10 m-left15">
@@ -285,7 +284,20 @@
                     </div>
                 </div>
             </div>
-            <div class="playbar-control"></div>
+            <div class="playbar-control">
+                <div id="cmd" class="ptop-10">
+                    <i class="fa-solid fa-shuffle fa-1x.5"></i>
+                    <i class="fa-solid fa-backward-step fa-1.5x"></i>
+                    <i class="fa-sharp fa-regular fa-circle-play fa-2x" id="play"></i>
+                    <i class="fa-solid fa-forward-step fa-1.5x"></i>
+                    <i class="fa-solid fa-arrow-rotate-right fa-1.5x"></i>
+                </div>
+                <div id="musicbar">
+                    <span>0:25</span>
+                    <input type="range">
+                    <span>4:35</span>
+                </div>
+            </div>
             <div class="playbar-vol d-flex align-center">
                 <div class="d-flex">
                     <div class="icon-vol">
