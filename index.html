@@ -50,10 +50,62 @@
                         </ul>
                     </section>
                     <section class="playlist">
-
+                        <h3 class="u-text">Playlist</h3>
+                        <div class="d-flex flex-row align-center cover">
+                            <i class="fa-sharp fa-solid fa-square-plus fa-3x"></i>
+                            <a href="#">Crea Playlist</a>
+                        </div>
+                        <div class="mleft-15 p-list">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span>Nome playlist</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Nome playlist</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Nome playlist</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Nome playlist</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Nome playlist</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Nome playlist</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </section>
                 </div>
-                <div class="bottom-nav"></div>
+                <div class="bottom-nav">
+                    <div class="d-flex flex-row align-center" id="install">
+                        <i class="fa-solid fa-circle-arrow-down"></i>
+                        <a href="#">
+                            <span>Installa app</span>
+                        </a>
+                    </div>
+                    <hr>
+                    <div class="d-flex flex-row align-center ptop-10" id="profile">
+                        <div class="profile-image">
+                            <img src="./img/profile.svg" alt="profile">
+                        </div>
+                        <h3>John Doe</h3>
+                    </div>
+                </div>
             </nav>
             <section class="main-content">
                 <div id="call-to-action" class="d-flex justify-end align-center">
@@ -208,11 +260,48 @@
                 </div>
             </section>
         </main>
-        <div id="playbar">
+        <div id="playbar" class="d-flex align-center space-between">
             <!--<i class="fa-sharp fa-regular fa-circle-play"></i>-->
+            <div class="playbar-album">
+                <div class="d-flex align-center">
+                    <div class="ptop-10 m-left15">
+                        <img src="./img/sinister.jpeg" alt="sinister">
+                    </div>
+                    <div class="m-left15">
+                        <a href="#">
+                            <h2>Sinister</h2>
+                        </a>
+                        <a href="#">
+                            <span>Brano nome</span>
+                        </a>
+                    </div>
+                    <div class="img-button">
+                        <a href="#">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-regular fa-folder"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="playbar-control"></div>
+            <div class="playbar-vol d-flex align-center">
+                <div class="d-flex">
+                    <div class="icon-vol">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="icon-vol">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+                    <div class="icon-vol">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                    <input type="range">
+                </div>
+            </div>
         </div>
     </div>
 </body>
 
 </html>
-

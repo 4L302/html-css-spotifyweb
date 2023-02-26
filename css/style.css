@@ -46,6 +46,15 @@ li {
     padding: 10px;
 }
 
+hr {
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 15px;
+    color: var(--white);
+}
+
 /*utility*/
 
 .btn {
@@ -79,6 +88,18 @@ li {
 
 .mb-10 {
     margin-bottom: 1vh;
+}
+
+.mleft-15 {
+    margin-left: -15px;
+}
+
+.m-left15 {
+    margin-left: 15px;
+}
+
+.ptop-10 {
+    padding-top: 10px;
 }
 
 .txt-bold {
@@ -137,14 +158,6 @@ main {
     display: flex;
 }
 
-#playbar {
-    width: 100%;
-    height: 80px;
-    background-color: var(--dark-grey);
-
-}
-
-
 .main-content {
     width: calc(100% - 230px);
     height: 100%;
@@ -177,9 +190,9 @@ main {
 }
 
 .row {
-
     margin-left: -15px;
     margin-right: -15px;
+    display: flex;
 }
 
 .col {
@@ -257,7 +270,6 @@ main {
 .bottom-nav {
     width: 100%;
     height: 80px;
-    border: 1px solid greenyellow;
 }
 
 .top-nav {
@@ -300,6 +312,99 @@ main {
 .aside-nav a:hover,
 .aside-nav a.active {
     border-left: 5px solid var(--highlight);
+}
+
+.playlist {
+    padding-left: 30px;
+}
+
+.playlist i {
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+
+.playlist a,
+.aside-nav {
+    font-weight: bold;
+}
+
+p.list{
+    overflow: hidden;
+}
+
+
+.bottom-nav {
+    padding: 0px 15px;
+}
+
+.bottom-nav i {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+
+#profile .profile-image {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+#profile img {
+    width: 30px;
+    background-color: var(--light-grey);
+    object-fit: cover;
+}
+
+/*playbar*/
+
+#playbar {
+    width: 100%;
+    height: 80px;
+    background-color: var(--dark-grey);
+}
+
+.playbar-album,
+.playbar-vol {
+    width: 230px;
+    height: 100%;
+    border: 1px solid red;
+}
+
+.playbar-album img {
+    width: 50px;
+}
+
+.playbar-album span {
+    color: var(--grey);
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.img-button{
+    margin-left: 20px;
+}
+
+.img-button a{
+    padding-left: 10px;
+}
+
+.playbar-control {
+    width: 40%;
+    border: 1px solid yellow;
+    height: 100%;
+}
+
+.icon-vol{
+    padding: 5px;
+    width: calc(100% / 3);
+    border: 1px solid green;
+}
+
+.playbar-vol input{
+    width: 100%;
 }
 
 /*responsive*/
