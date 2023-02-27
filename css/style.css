@@ -124,9 +124,10 @@ h3 {
     flex-wrap: wrap;
 }
 
-.flex-column{
+.flex-column {
     flex-direction: column;
 }
+
 .justify-center {
     justify-content: center;
 }
@@ -332,7 +333,7 @@ main {
     font-weight: bold;
 }
 
-p.list{
+p.list {
     overflow: hidden;
 }
 
@@ -385,11 +386,11 @@ p.list{
     font-weight: bold;
 }
 
-.img-button{
+.img-button {
     margin-left: 20px;
 }
 
-.img-button a{
+.img-button a {
     padding-left: 10px;
 }
 
@@ -398,37 +399,37 @@ p.list{
     height: 100%;
 }
 
-.playbar-control{
+.playbar-control {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.playbar-control i{
+.playbar-control i {
     padding: 5px;
-} 
+}
 
-#musicbar{
+#musicbar {
     width: 100%;
 }
 
-#musicbar span{
+#musicbar span {
     width: 10%;
 
 }
 
-#musicbar input{
+#musicbar input {
     width: 80%;
 }
 
 
-.icon-vol{
+.icon-vol {
     padding: 5px;
     width: calc(100% / 3);
 }
 
-.playbar-vol input{
+.playbar-vol input {
     width: 100%;
 }
 
@@ -444,12 +445,30 @@ p.list{
     .col {
         width: calc(100% / 3);
     }
+
+    #musicbar span {
+        width: 10%;
+    }
+
+    #musicbar input {
+        width: 70%;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
     .col {
         width: calc(100% / 2);
     }
+
+    #musicbar span {
+        width: 10%;
+    }
+
+    #musicbar input {
+        width: 60%;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -484,36 +503,55 @@ p.list{
     .playbar-album img {
         width: 100%;
     }
-    #install a{
+
+    #install a {
         display: none;
     }
-    #install i{
+
+    #install i {
         font-size: 30px;
     }
 
-    #profile h3{
+    #profile h3 {
         display: none;
     }
 
-    #profile .profile-image{
+    #profile .profile-image {
         width: 30px;
-        height: 30px;  
+        height: 30px;
     }
 
-    #profile .profile-image img{
+    #profile .profile-image img {
         width: 30px;
     }
- 
+
+    #musicbar span {
+        width: 10%;
+    }
+
+    #musicbar input {
+        width: 50%;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
     .col {
         width: 100%;
     }
+
+    #musicbar span {
+        width: 5%;
+    }
+
+    #musicbar input {
+        width: 40%;
+    }
+
 }
 
 /*debug*/
 
-.debug{
+.debug {
     border: 1px solid green;
 }
